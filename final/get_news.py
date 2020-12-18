@@ -1,14 +1,14 @@
 import requests
 import json 
 import itertools
-#from fuzzywuzzy import fuzz
+
 
 
 #Getting 
 def api_call(tag):
        url = (f'http://newsapi.org/v2/top-headlines?'
        'sources=%s&'
-       'apiKey=ce14cd708c98400dae8398e4ffae83c6'%tag)
+       'apiKey=apiKey'%tag)
        response = requests.get(url)
        #Unformatted JSON response 
        json_string = response.json()
@@ -37,13 +37,16 @@ def get_data():
        
        #creating a master list
        master_list = espn_articles + br_articles  + bbc_articles
+      
+       #Debugging assistance 
        #print(master_list)
-       #print (fuzz.token_set_ratio(master_list[4]['description'],master_list[0]['description']))
        #for i in range(len(master_list)):
               #print ('Title: ' + str(master_list[i]['title']))
               #print ('Author:' + str(master_list[i]['author']))
               #print ('Summary: ' + str(master_list[i]['description']))
               #print ('Link: ' + str(master_list[i]['url']))
+       
+       #return list of compiled data
        return master_list
             
               
