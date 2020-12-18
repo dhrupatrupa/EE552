@@ -1,1 +1,8 @@
-Read me
+EE 552 Final Project
+
+Purpose
+
+The purpose behind this project is quite simple. Every morning when I am eating breakfast I scroll through different websites to get the news. For example when it comes to sports I read espn, bleacher report , and bbc sports. I would much rather just have all of the top headlines from each site condensed for me into one page. I decided to make a barebones python program to collect data from these three websites and send that information over to me in a condensed email.
+
+What I am submitting for this project might be small in scope, but with time I aim to expand this project to pretty much allow for a user to tick off as many different news sources as they want. Then my program will deliver them the news promptly and concisely everyday. My plan to expand on this project is to first set up an online service where users can provide their email and then their desired news sources. Right now for the project everything was done locally. 
+
