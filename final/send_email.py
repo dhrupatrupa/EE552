@@ -1,14 +1,13 @@
 import csv
 from email import message
 import smtplib, ssl
+import getpass
 import get_news
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 smtp_server = "smtp.gmail.com"
 port = 587  # For starttls
-sender_email = "dhru.a.patel@gmail.com"
-password = input("Enter email for {sender_email}")
 
 def build_message(name,sender_email, receiver_email, subject):
 
@@ -67,9 +66,16 @@ def build_message(name,sender_email, receiver_email, subject):
     message.attach(format_sig)
     built_message = message.as_string()
     return built_message
-# Create a secure SSL context
-context = ssl.create_default_context()
+
+
+
 def send_out():
+    # Create a secure SSL context
+    context = ssl.create_default_context()
+    
+    sender_email = input("Enter sender email: ")
+    password = getpass.getpass(f"Enter password for {sender_email}: ") 
+   
     # Try to log in to server and send email
     try:
         server = smtplib.SMTP(smtp_server,port)
@@ -91,4 +97,5 @@ def send_out():
         print("error: " ,e)
     finally:
         server.quit() 
+
 send_out()
