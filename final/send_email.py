@@ -8,7 +8,7 @@ from email.mime.multipart import MIMEMultipart
 smtp_server = "smtp.gmail.com"
 port = 587  # For starttls
 sender_email = "dhru.a.patel@gmail.com"
-password = "Aneeka!12891623033"
+password = input("Enter email for {sender_email}")
 
 def build_message(name,sender_email, receiver_email, subject):
 
