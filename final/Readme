@@ -7,3 +7,7 @@ The purpose behind this project is quite simple. Every morning when I am eating 
 What I am submitting for this project might be small in scope, but with time I aim to expand this project to pretty much allow for a user to tick off as many different news sources as they want. Then my program will deliver them the news promptly and concisely everyday. My plan to expand on this project is to first set up an online service where users can provide their email and then their desired news sources. Right now for the project everything was done locally. 
 
 https://youtu.be/i4fh0M0Ntw4
+
+sources:
+https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjt-YmipdjtAhXGEVkFHZKzCg8QFjAAegQIAhAC&url=https%3A%2F%2Frealpython.com%2Fpython-send-email%2F&usg=AOvVaw2rS900IH8I4f3x-h37LP1y
+https://newsapi.org
