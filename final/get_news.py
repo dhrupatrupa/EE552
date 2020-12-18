@@ -8,7 +8,7 @@ import itertools
 def api_call(tag):
        url = (f'http://newsapi.org/v2/top-headlines?'
        'sources=%s&'
-       'apiKey=ce14cd708c98400dae8398e4ffae83c6'%tag)
+       'apiKey=apiKey'%tag)
        response = requests.get(url)
        #Unformatted JSON response 
        json_string = response.json()
